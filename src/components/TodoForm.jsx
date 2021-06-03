@@ -8,12 +8,11 @@ const TodoForm = ({ addTodo }) => {
     e.preventDefault();
 
     if (!value) {
-      alert("is blank todo");
+      alert("No blank todo");
       return;
     }
 
     addTodo(value);
-    alert(value);
     setValue("");
   };
 
