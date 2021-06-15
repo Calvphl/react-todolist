@@ -13,7 +13,12 @@ const Button = ({ text, onClick, color, align }) => {
   //   align === "right" && "align-right"
   // ].join(" ");
 
-  const classNames = cx(styles.headerBtn);
+  const classNames = cx(styles.headerBtn, {
+    [styles.mainBlackColor]: color === "black",
+    [styles.mainRedColor]: color === "red",
+    [styles.alignLeft]: align === "left",
+    [styles.alignRight]: align === "right"
+  });
 
   return (
     <button className={classNames} onClick={onClick}>
