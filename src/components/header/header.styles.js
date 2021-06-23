@@ -8,7 +8,6 @@ export const header = () =>
 
 export const headerTitle = (theme) =>
   css`
-    /* width: 52%; */
     color: ${theme.color.primary.black};
     text-align: center;
     font-size: 3.6rem;
